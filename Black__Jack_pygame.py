@@ -74,7 +74,7 @@ def bet_ask(cash,player_score, dealer_score, player_carden, dealer_carden,bet):
           bagio = ASKING_FONT.render(user_text, True, WHITE)
           WIN.blit(bagio, (160, 680))
           pygame.display.update()
-        elif event.key == pygame.K_TAB:
+        elif event.key == pygame.K_RETURN:
           asking = False
         else:
           user_text += event.unicode
@@ -236,7 +236,7 @@ def asking_cards(cash,player_score, dealer_score, player_carden, dealer_carden,b
           bagio = ASKING_FONT.render(user_text, True, WHITE)
           WIN.blit(bagio, (330, 680))
           pygame.display.update()
-        elif event.key == pygame.K_TAB:
+        elif event.key == pygame.K_RETURN:
           asking = False
         else:
           user_text += event.unicode
